@@ -1,0 +1,141 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --header-color: #ffffff;
+  --header-text-color: #9da4bd;
+  --acent-color: #ff6c00;
+  --title-color: #303030;
+  --main-text-color: #555555;
+  --suptitle-color: #303030;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+}
+
+/*                                      HEADER                             */
+
+.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /*color: var(--header-color);*/
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--acent-color);
+}
+.contact-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /*color: var(--header-color);*/
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--acent-color);
+}
+.modal-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  /*color: var(--header-color);*/
+  cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--acent-color);
+}
+/*                                         HERO                                */
+.media-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--suptitle-color);
+}
+
+.media-link:hover,
+.media-link:focus {
+  color: var(--acent-color);
+}
+.sup-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  /*color: var(--header-color);*/
+}
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--header-text-color);
+}
+/*                                           ABOUT                                 */
+.about-suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--suptitle-color);
+}
+.about-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--suptitle-color);
+}
+.about-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.about-text-second {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.about-button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--suptitle-color);
+}
+.about-button:hover,
+.about-button:focus {
+  background-color: var(--acent-color);
+  color: #ffffff;
+}
+/*                                      SERVICES AND PRICES                             */

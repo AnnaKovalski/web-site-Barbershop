@@ -5,65 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+            integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+            crossorigin="anonymous" />
+            <link rel="stylesheet" href="./сss/style.css">
+
 </head>
 <body>
     <!--Header-->
 
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav-site">
         <a href="">
             <img src="" alt="Это логотип сайта">
         </a>
         
-        <ul>
-            <li><a href=""> О нас </a></li>
-            <li><a href=""> Услуги и цены </a></li>
-            <li><a href=""> Мастера </a></li>
-            <li><a href=""> Контакты </a></li>
+        <ul class="nav-list list">
+            <li class="nav-item"><a href="" class="nav-link link" > О нас </a></li>
+            <li class="nav-item"><a href="" class="nav-link link" > Услуги и цены </a></li>
+            <li class="nav-item"><a href="" class="nav-link link" > Мастера </a></li>
+            <li class="nav-item"><a href="" class="nav-link link" > Контакты </a></li>
         </ul>
         </nav>
-        <ul>
-            <li><a href="tel:+380441111111"></a>+38 044 111 11 11 </li>
-            <li><button type="button">Онлайн Запись </button></li>
+        <ul class="contact-list list">
+            <li class="contact-item"><a class="contact-link link" href="tel:+380441111111">+38 044 111 11 11</a> </li>
+            <li class="contact-item"><button type="button" class="modal-btn">Онлайн Запись </button></li>
         </ul>
     </header>
 <main>
     <!--Hero-->
 
-    <section>
-        <div>
-            <ul>
-                <li><a href="">Youtube</a></li>
-                <li><a href="">Instagram</a></li>
+    <section class="hero">
+        <div class="hero-right">
+            <ul class="media-list list">
+                <li class="media-item"><a href="" class="media-link link">Youtube</a></li>
+                <li class="media-item"><a href="" class="media-link link">Instagram</a></li>
             </ul>
         </div>
-        <div>
-        <p lang="en"> A hair salon for men in Kyiv</p>
-        <h1 lang="en"> BarberShop</h1>
-        <p>Мы эксперты в модных мужских стрижках.
+        <div class="hero-left">
+        <p class = "sup-title"lang="en"> A hair salon for men in Kyiv</p>
+        <h1 class="hero-title" lang="en"> BarberShop</h1>
+        <p class="hero-text">Мы эксперты в модных мужских стрижках.
         Работаем быстро, осторожно и со вкусом.</p>
         </div>
         
     </section>
 
     <!--About-->
-<section>
+<section class="about">
     
-    <div>
-    <ul>
-        <li><img src="./images/about/about-1.jpg" alt="Барбер наносит пену" width="270" height="445"></li>
-        <li><img src="./images/about/about-2.jpg" alt="Барбер бреет лезвием" width="270" height="445"></li>
+    <div class="about-right">
+    <ul class="about-work list">
+        <li class="work-item"><img src="./images/about/about-1.jpg" alt="Барбер наносит пену" width="270" height="445"></li>
+        <li class="work-item"><img src="./images/about/about-2.jpg" alt="Барбер бреет лезвием" width="270" height="445"></li>
     </ul>
     </div>
 
-    <div>
-    <p> О нас </p>
-    <h2>Лучший Барбершоп твоего города </h2>
-    <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-    <p>Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего
+    <div class="about-left">
+    <p class="about-suptitle"> О нас </p>
+    <h2 class="about-title">Лучший Барбершоп твоего города </h2>
+    <p class="about-text">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+    <p class="about-text-second">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего
     мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы
     всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-    <button type="button"> Онлайн запись</button>
+    <button type="button" class="about-button"> Онлайн запись</button>
     </div>
 
 </section>
