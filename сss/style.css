@@ -3,27 +3,77 @@ body {
 }
 :root {
   --header-color: #ffffff;
-  --header-text-color: #9da4bd;
+  --main-text-color-dark: #9da4bd;
   --acent-color: #ff6c00;
   --title-color: #303030;
-  --main-text-color: #555555;
-  --suptitle-color: #303030;
+  --main-text-color-light: #555555;
+  --suptitle-text-color-light: #303030;
+  --suptitle-text-color: rgba(157, 164, 189, 0.6);
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
 }
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
   font-family: Raleway, sans-serif;
   font-weight: 700;
 }
+.img {
+  display: block;
+}
+.ul,
+.ol {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
 /*                                      HEADER                             */
+.header {
+  background-color: teal;
+  /*display: flex;
+  outline: 2px solid black;*/
+}
+.header .container {
+  display: flex;
+  outline: 2px solid black;
+  align-items: center;
+}
+.logo {
+  width: 69px;
+  height: 55px;
+  margin-right: 71px;
+}
+.nav-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid tomato;
+  margin-right: auto;
+  width: 387px;
+}
 
+.nav-list {
+  display: flex;
+  outline: 1px solid tomato;
+  align-items: center;
+  justify-content: space-between;
+}
 .nav-link {
   font-weight: 600;
   font-size: 12px;
@@ -66,20 +116,20 @@ h3 {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: var(--suptitle-color);
+  color: var(--suptitle-text-color-light);
 }
 
 .media-link:hover,
 .media-link:focus {
   color: var(--acent-color);
 }
-.sup-title {
+.common-suptittle {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
+  color: var(--suptitle-text-color);
 }
 .hero-title {
   font-size: 72px;
@@ -92,16 +142,11 @@ h3 {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-  color: var(--header-text-color);
+  color: var(--main-text-color-dark);
 }
 /*                                           ABOUT                                 */
 .about-suptitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--suptitle-color);
+  color: var(--suptitle-text-color-light);
 }
 .about-title {
   font-weight: 700;
@@ -115,14 +160,14 @@ h3 {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: var(--main-text-color-light);
 }
 .about-text-second {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: var(--main-text-color-light);
 }
 .about-button {
   font-family: inherit;
@@ -139,3 +184,78 @@ h3 {
   color: #ffffff;
 }
 /*                                      SERVICES AND PRICES                             */
+.services-suptitle {
+  color: var(--suptitle-text-color);
+}
+.services-tittle {
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.services-prices {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color-dark);
+}
+/*                                      ADVANTAGES                            */
+.advantages-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--suptitle-text-color-light);
+}
+.advantages-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--suptitle-text-color-light);
+}
+.advantages-suptittle {
+  color: var(--suptitle-text-color-light);
+}
+
+.advantages-tittle {
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--suptitle-text-color-light);
+}
+.advantages-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color-light);
+}
+/*                                      TEAM                            */
+.team-suptittle {
+  color: var(--suptitle-text-color-light);
+}
+.team-tittle {
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--title-color);
+}
+.masters-tittle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.masters-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
