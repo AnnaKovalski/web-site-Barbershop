@@ -12,8 +12,6 @@ body {
 }
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -29,13 +27,23 @@ p {
   font-family: Raleway, sans-serif;
   font-weight: 700;
 }
-.img {
+img {
   display: block;
 }
-.ul,
-.ol {
+ul,
+ol {
   padding: 0;
   margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .container {
   max-width: 1200px;
@@ -46,8 +54,8 @@ p {
 /*                                      HEADER                             */
 .header {
   background-color: teal;
-  /*display: flex;
-  outline: 2px solid black;*/
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header .container {
   display: flex;
@@ -61,35 +69,44 @@ p {
 }
 .nav-site {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   outline: 1px solid tomato;
-  margin-right: auto;
-  width: 387px;
 }
 
 .nav-list {
   display: flex;
   outline: 1px solid tomato;
   align-items: center;
-  justify-content: space-between;
 }
 .nav-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+  padding: 20px 0;
   /*color: var(--header-color);*/
+}
+.nav-item:not(:last-child) {
+  margin-right: 40px;
 }
 .nav-link:hover,
 .nav-link:focus {
   color: var(--acent-color);
 }
+.contact-list {
+  display: flex;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  align-items: center;
+}
+
 .contact-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+  margin-right: 40px;
+  padding: 20px 0;
   /*color: var(--header-color);*/
 }
 .contact-link:hover,
@@ -103,6 +120,10 @@ p {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  min-width: 160px;
+  padding: 12px 20px;
   /*color: var(--header-color);*/
   cursor: pointer;
 }
@@ -111,6 +132,26 @@ p {
   background-color: var(--acent-color);
 }
 /*                                         HERO                                */
+.hero {
+  background-color: turquoise;
+  /*padding-top: 184px;
+  padding-bottom: 206px;*/
+}
+.hero > .container {
+  display: flex;
+  align-items: center;
+}
+.hero-left {
+  width: 100px;
+  outline: 1px solid tomato;
+}
+.hero-right {
+  flex-grow: 1;
+  outline: 1px solid black;
+  padding: 100px 30px;
+}
+.media-list {
+}
 .media-link {
   font-weight: 600;
   font-size: 11px;
